@@ -1,0 +1,210 @@
+/* Removeing Default styles from Browser */
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    padding: 40px 10%;
+}
+
+/* Listing all Fonts */
+li, .hero-heading, .button-join, .button-email{
+    font-family: 'Orbitron';
+
+}
+
+h4, .nav-button, .hero-description{
+    font-family: 'Poppins';
+}
+
+/* Designing Nav Bar */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav div ul li{
+    font-size: 1.3em;
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+nav div ul li:first-child{
+    font-weight: 900;
+}
+
+/* line under first child */
+nav div ul li:first-child::after{
+    content: "";
+    height: 2.5px;
+    width: 50px;
+    background-color: #000;
+    position: absolute;
+    top: 12.8%;
+    left: 34%;
+    
+}
+
+nav .button-group{
+    display: flex;
+}
+
+.nav-button{
+    font-size: 1.3em;
+    padding: 6px 50px;
+    border-radius: 10px;
+    border: 2px solid #000;
+    margin-left: 18%;
+}
+
+/* Aligning the svg with button */
+svg{
+    padding: 6px 0 6px 0;
+}
+
+nav div img{
+    height: 45px;
+}
+
+/* Positioning the the small fancy images */
+section[aria-label="banner"] .hero-container .globe img{
+    height:59px;
+    position: absolute;
+    top: 20%;
+    left: 52%;
+}
+
+section[aria-label="banner"] .hero-container .star img{
+    position: absolute;
+    height:50px;
+    top: 28%;
+    left: 90%;
+}
+
+section[aria-label="banner"] .hero-container .square img{
+    width: calc(422px/1.5);
+    position: absolute;
+    top:56%;
+    left: calc(25%/1.4);
+}
+
+/* Position the main Subject */
+.globe + div img{
+    width:22%;
+    position: absolute;
+    top: 26%;
+}
+
+
+/* Positioning Main Content on the right Side */
+.hero-container-right{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top:30%;
+    left: 44%;
+}
+
+.hero-container-right .hero-heading{
+    font-size: 60px;
+}
+
+.hero-container-right .hero-description{
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+    width: 700px;
+    margin-left: 10%;
+    margin-top: -2%;
+}
+
+/* Positioning The Buttons */
+.button-join, .button-email{
+    font-size: 1.2em;
+    padding: 2px 20px;
+    border-radius: 10px;
+    border: 2px solid black;
+    background-color: #fff;
+    margin-top: 5%;
+}
+
+.button-join{
+    background-color: black;
+    color: #fff;
+    margin-left: 3%;
+}
+
+
+/* Aligning the Button and Social media icons */
+.hero-container .hero-container-right div{
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Styleing Contact Us text */
+.hero-container-right div:last-of-type h4{
+    font-size: 1.2em;
+    font-weight: 300;
+    margin-top: 5%;
+} 
+
+/* Positioning Social Media Icons */
+.hero-container-right div .icons{
+    position: absolute;
+    top: 95%;
+}
+
+/* Adding Space between social media icons */
+.hero-container-right div .icons span{
+    margin: 3%;
+}
+
+/* Extra Stuff */
+img{
+    cursor: pointer;
+}
+
+img:hover{
+    opacity: 0.6;
+}
+
+::selection{
+  background-color: orangered;
+}
+
+/* Ripple Effect */
+button {
+    position: relative;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+.button-email:after, .button-join:after {
+    content: "";
+    background: #000;
+    display: block;
+    position: absolute;
+    padding-top: 300%;
+    padding-left: 350%;
+    margin-left: -20px!important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s
+  }
+
+  .button-join:after {
+    background: #fff;
+  }
+
+  button:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s
+  }
