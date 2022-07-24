@@ -44,6 +44,7 @@ Go to the project directory
 1. I have improved my self in reserching on the internet
 2. Got a good understanding on sibling selectors
 3. I knew absolute positioning but got a Hands on experience of absolute positioning 
+4. I had some fun with `z-index` and `opacity`
 
 ## Honest Time to finish the project
 
